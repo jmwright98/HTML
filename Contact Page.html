@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Contact Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Yachting Tours Page">
+        <meta name="author" content="Jack Wright">
+        
+        <link rel="stylesheet" type="text/css" href="stylesheetcontact.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    </head>
+    
+    <body>
+
+        <!--Main Section-->
+        
+        <div>
+            <h2>Contact Us</h2>
+        </div>
+        <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required minlength="2">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Please select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="billing">Billing Question</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Subscribe to our newsletter
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+
+</html>
